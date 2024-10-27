@@ -1,5 +1,6 @@
 package com.getrosoft.teleport;
 
+import com.getrosoft.teleport.service.TrackingNumberService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -29,7 +30,7 @@ class TrackingNumberServiceTest {
 		Set<String> generatedTrackingNumbers = new HashSet<>();
 		
 		for (int i = 0; i < NUM_TRACKING_NUMBERS; i++) {
-			String result = trackingNumberService.generateTrackingNumber();
+			String result = String.valueOf(trackingNumberService.generateTrackingNumber());
 			
 			assertNotNull(result);
 			assertNotNull(result);
