@@ -73,3 +73,7 @@ mvn test
 ```
 2. ### Testing Concurrent Requests: 
     You can test the API's concurrency handling by running multiple parallel requests. Tools like Apache JMeter or simple scripts can be used to simulate high concurrency.
+
+## Additional Notes
+- This API uses an in-memory H2 database for local testing. For production, replace the H2 database with a persistent database such as PostgreSQL or MySQL.
+- Ensure security best practices are followed, especially when deploying to production.
